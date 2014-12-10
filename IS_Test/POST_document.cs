@@ -1,0 +1,75 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace IS_Test
+{
+    public partial class POST_document : BaseForm
+    {
+        private List<CustomProperty> CustomProperties = new List<CustomProperty>();
+
+        public POST_document()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Data = CreateXML();
+            this.Close();
+        }
+
+        private void b_SetCustomProps_Click(object sender, EventArgs e)
+        {
+            CUSTOM_PROPERTIES test = new CUSTOM_PROPERTIES("DOCUMENT_TYPE", "Default");
+
+            test.ShowDialog();
+            CustomProperties = test.SelectedProperties;
+        }
+
+        private string CreateXML()
+        {
+            StringBuilder sb = new System.Text.StringBuilder();
+
+            sb.Append("<document>");
+            sb.Append("<info>");
+            sb.Append(string.Format("<name>{0}</name>", t_Name.Text.Trim()));
+            sb.Append(string.Format("<locationId>{0}</locationId>", t_LocationID.Text.Trim()));
+            sb.Append("<keys>");
+            sb.Append(string.Format("<drawer>{0}</drawer>", t_Drawer.Text.Trim()));
+            sb.Append(string.Format("<field1>{0}</field1>", t_Field1.Text.Trim()));
+            sb.Append(string.Format("<field2>{0}</field2>", t_Field2.Text.Trim()));
+            sb.Append(string.Format("<field3>{0}</field3>", t_Field3.Text.Trim()));
+            sb.Append(string.Format("<field4>{0}</field4>", t_Field4.Text.Trim()));
+            sb.Append(string.Format("<field5>{0}</field5>", t_Field5.Text.Trim()));
+            sb.Append(string.Format("<documentType>{0}</documentType>", t_DocType.Text.Trim()));
+            sb.Append("</keys>");
+
+            sb.Append("</info>");
+
+            if (CustomProperties.Count > 0)
+            {
+                sb.Append("<properties>");
+                foreach (CustomProperty cp in CustomProperties)
+                {
+                    sb.Append("<property>");
+                    sb.Append(string.Format("<id>{0}</id>", cp.ID));
+                    sb.Append(string.Format("<type>{0}</type>", cp.Type));
+                    sb.Append(string.Format("<value>{0}</value>", cp.Value));
+                    sb.Append("<childProperties/>");
+                    sb.Append("</property>");
+                }
+                sb.Append("</properties>");
+            }
+
+            sb.Append("</document>");
+
+            return sb.ToString();
+        }
+    }
+}

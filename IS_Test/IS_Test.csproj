@@ -1,0 +1,1077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{050FE0E1-F9E7-4EC9-92B9-F4C6DD97E20F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IS_Test</RootNamespace>
+    <AssemblyName>IS_Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>H:\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddString.Designer.cs">
+      <DependentUpon>AddString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSamples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeSamples.Designer.cs">
+      <DependentUpon>CodeSamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTEXT_DOCUMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTEXT_DOCUMENT.Designer.cs">
+      <DependentUpon>CONTEXT_DOCUMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTEXT_FOLDER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTEXT_FOLDER.Designer.cs">
+      <DependentUpon>CONTEXT_FOLDER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTACT_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTACT_INFO.Designer.cs">
+      <DependentUpon>CONTACT_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADDGROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDGROUP.Designer.cs">
+      <DependentUpon>ADDGROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_usergroupidprivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_usergroupidprivilege.Designer.cs">
+      <DependentUpon>PUT_usergroupidprivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_useridprivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_useridprivilege.Designer.cs">
+      <DependentUpon>PUT_useridprivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_usergroupid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_usergroupid.Designer.cs">
+      <DependentUpon>DELETE_usergroupid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_usergroupidprivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_usergroupidprivilege.Designer.cs">
+      <DependentUpon>GET_usergroupidprivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_usergroupid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_usergroupid.Designer.cs">
+      <DependentUpon>GET_usergroupid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Privileges.cs" />
+    <Compile Include="PUT_useridprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_useridprofile.Designer.cs">
+      <DependentUpon>PUT_useridprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_useridgroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_useridgroup.Designer.cs">
+      <DependentUpon>PUT_useridgroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_usergroupid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_usergroupid.Designer.cs">
+      <DependentUpon>PUT_usergroupid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_useridaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_useridaccount.Designer.cs">
+      <DependentUpon>PUT_useridaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EXTERNAL_SYSTEM_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EXTERNAL_SYSTEM_INFO.Designer.cs">
+      <DependentUpon>EXTERNAL_SYSTEM_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDENTITY_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDENTITY_INFO.Designer.cs">
+      <DependentUpon>IDENTITY_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_user.Designer.cs">
+      <DependentUpon>POST_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_userid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_userid.Designer.cs">
+      <DependentUpon>DELETE_userid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_useridprivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_useridprivilege.Designer.cs">
+      <DependentUpon>GET_useridprivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_useridgroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_useridgroup.Designer.cs">
+      <DependentUpon>GET_useridgroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_useridextendedinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_useridextendedinfo.Designer.cs">
+      <DependentUpon>GET_useridextendedinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_userid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_userid.Designer.cs">
+      <DependentUpon>GET_userid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_hosteddocumentclientdocidclientlogobclientlogobid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_hosteddocumentclientdocidclientlogobclientlogobid.Designer.cs">
+      <DependentUpon>GET_hosteddocumentclientdocidclientlogobclientlogobid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_hosteddocumentclientdocumentid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_hosteddocumentclientdocumentid.Designer.cs">
+      <DependentUpon>GET_hosteddocumentclientdocumentid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_folderidpath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_folderidpath.Designer.cs">
+      <DependentUpon>GET_folderidpath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_folderiddocumenttype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_folderiddocumenttype.Designer.cs">
+      <DependentUpon>GET_folderiddocumenttype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_folderidbanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_folderidbanner.Designer.cs">
+      <DependentUpon>GET_folderidbanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_documentidpagepageidfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_documentidpagepageidfile.Designer.cs">
+      <DependentUpon>PUT_documentidpagepageidfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_documentidpagepageid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_documentidpagepageid.Designer.cs">
+      <DependentUpon>PUT_documentidpagepageid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_documentidpagepageid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_documentidpagepageid.Designer.cs">
+      <DependentUpon>DELETE_documentidpagepageid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_applicationplanidlocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_applicationplanidlocation.Designer.cs">
+      <DependentUpon>PUT_applicationplanidlocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_applicationplanid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_applicationplanid.Designer.cs">
+      <DependentUpon>GET_applicationplanid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_applicationplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_applicationplan.Designer.cs">
+      <DependentUpon>GET_applicationplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAQ.Designer.cs">
+      <DependentUpon>FAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_capturegroupid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_capturegroupid.Designer.cs">
+      <DependentUpon>PUT_capturegroupid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATAPAIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATAPAIR.Designer.cs">
+      <DependentUpon>DATAPAIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_capturegroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_capturegroup.Designer.cs">
+      <DependentUpon>POST_capturegroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_workflowqueueidforwardroute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_workflowqueueidforwardroute.Designer.cs">
+      <DependentUpon>GET_workflowqueueidforwardroute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_workflowqueueidform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_workflowqueueidform.Designer.cs">
+      <DependentUpon>GET_workflowqueueidform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_workflowqueueid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_workflowqueueid.Designer.cs">
+      <DependentUpon>GET_workflowqueueid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_capturegroupidpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_capturegroupidpage.Designer.cs">
+      <DependentUpon>POST_capturegroupidpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_workflowitemidstate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_workflowitemidstate.Designer.cs">
+      <DependentUpon>PUT_workflowitemidstate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_workflowitemidhold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_workflowitemidhold.Designer.cs">
+      <DependentUpon>PUT_workflowitemidhold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_workflowitemidroutingaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_workflowitemidroutingaction.Designer.cs">
+      <DependentUpon>POST_workflowitemidroutingaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_workflowitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_workflowitem.Designer.cs">
+      <DependentUpon>POST_workflowitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_workflowitemid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_workflowitemid.Designer.cs">
+      <DependentUpon>GET_workflowitemid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_workflowitemid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_workflowitemid.Designer.cs">
+      <DependentUpon>DELETE_workflowitemid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_viewviewidfilterfilteridresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_viewviewidfilterfilteridresult.Designer.cs">
+      <DependentUpon>POST_viewviewidfilterfilteridresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_viewidresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_viewidresult.Designer.cs">
+      <DependentUpon>POST_viewidresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_viewidrefreshresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_viewidrefreshresult.Designer.cs">
+      <DependentUpon>POST_viewidrefreshresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_viewid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_viewid.Designer.cs">
+      <DependentUpon>GET_viewid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_usergroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_usergroup.Designer.cs">
+      <DependentUpon>GET_usergroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_taskidreturnaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_taskidreturnaction.Designer.cs">
+      <DependentUpon>POST_taskidreturnaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_taskidcompleteaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_taskidcompleteaction.Designer.cs">
+      <DependentUpon>POST_taskidcompleteaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_taskidcomment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_taskidcomment.Designer.cs">
+      <DependentUpon>POST_taskidcomment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_taskidcomment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_taskidcomment.Designer.cs">
+      <DependentUpon>GET_taskidcomment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_taskid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_taskid.Designer.cs">
+      <DependentUpon>GET_taskid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_reasonlistidreason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_reasonlistidreason.Designer.cs">
+      <DependentUpon>GET_reasonlistidreason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_propertyid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_propertyid.Designer.cs">
+      <DependentUpon>GET_propertyid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_serveraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_serveraction.Designer.cs">
+      <DependentUpon>POST_serveraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_formidfolderfolderid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_formidfolderfolderid.Designer.cs">
+      <DependentUpon>PUT_formidfolderfolderid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_formiddocumentdocid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_formiddocumentdocid.Designer.cs">
+      <DependentUpon>PUT_formiddocumentdocid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_formidpresentationpresentationidfilefileid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_formidpresentationpresentationidfilefileid.Designer.cs">
+      <DependentUpon>GET_formidpresentationpresentationidfilefileid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_formidpresentationpresentationid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_formidpresentationpresentationid.Designer.cs">
+      <DependentUpon>GET_formidpresentationpresentationid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_formidpresentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_formidpresentation.Designer.cs">
+      <DependentUpon>GET_formidpresentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_formidfolderfolderid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_formidfolderfolderid.Designer.cs">
+      <DependentUpon>GET_formidfolderfolderid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_formiddocumentdocid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_formiddocumentdocid.Designer.cs">
+      <DependentUpon>GET_formiddocumentdocid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_formid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_formid.Designer.cs">
+      <DependentUpon>GET_formid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_foldertypeid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_foldertypeid.Designer.cs">
+      <DependentUpon>GET_foldertypeid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_folderidname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_folderidname.Designer.cs">
+      <DependentUpon>PUT_folderidname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_folderid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_folderid.Designer.cs">
+      <DependentUpon>PUT_folderid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_foldersearchresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_foldersearchresult.Designer.cs">
+      <DependentUpon>POST_foldersearchresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_folderidcontent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_folderidcontent.Designer.cs">
+      <DependentUpon>POST_folderidcontent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_folder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_folder.Designer.cs">
+      <DependentUpon>POST_folder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_folderid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_folderid.Designer.cs">
+      <DependentUpon>GET_folderid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_folderid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_folderid.Designer.cs">
+      <DependentUpon>DELETE_folderid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ITEM.Designer.cs">
+      <DependentUpon>ITEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_draweridcontent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_draweridcontent.Designer.cs">
+      <DependentUpon>POST_draweridcontent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_drawerid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_drawerid.Designer.cs">
+      <DependentUpon>GET_drawerid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documenttypelistid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documenttypelistid.Designer.cs">
+      <DependentUpon>GET_documenttypelistid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documenttypeid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documenttypeid.Designer.cs">
+      <DependentUpon>GET_documenttypeid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUT_documentidname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_documentidname.Designer.cs">
+      <DependentUpon>PUT_documentidname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_documentidcopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_documentidcopy.Designer.cs">
+      <DependentUpon>POST_documentidcopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_documentidpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_documentidpage.Designer.cs">
+      <DependentUpon>POST_documentidpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomProperty.cs" />
+    <Compile Include="CUSTOM_PROPERTIES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_PROPERTIES.Designer.cs">
+      <DependentUpon>CUSTOM_PROPERTIES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_PROPERTIES_SET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_PROPERTIES_SET.Designer.cs">
+      <DependentUpon>CUSTOM_PROPERTIES_SET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HEAD_documentidpagepageidthumbnail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HEAD_documentidpagepageidthumbnail.Designer.cs">
+      <DependentUpon>HEAD_documentidpagepageidthumbnail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HEAD_documentidpagepageidpreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HEAD_documentidpagepageidpreview.Designer.cs">
+      <DependentUpon>HEAD_documentidpagepageidpreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HEAD_documentidpagepageidfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HEAD_documentidpagepageidfile.Designer.cs">
+      <DependentUpon>HEAD_documentidpagepageidfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documentidpagepageidthumbnail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documentidpagepageidthumbnail.Designer.cs">
+      <DependentUpon>GET_documentidpagepageidthumbnail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documentidpagepageidfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documentidpagepageidfile.Designer.cs">
+      <DependentUpon>GET_documentidpagepageidfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documentiddigitalsignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documentiddigitalsignature.Designer.cs">
+      <DependentUpon>GET_documentiddigitalsignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documentidpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documentidpage.Designer.cs">
+      <DependentUpon>GET_documentidpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documentid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documentid.Designer.cs">
+      <DependentUpon>GET_documentid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_documentid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_documentid.Designer.cs">
+      <DependentUpon>DELETE_documentid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_documentidpagepageidpreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_documentidpagepageidpreview.Designer.cs">
+      <DependentUpon>GET_documentidpagepageidpreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POST_digitalid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_digitalid.Designer.cs">
+      <DependentUpon>POST_digitalid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_connection.Designer.cs">
+      <DependentUpon>DELETE_connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPTY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPTY.Designer.cs">
+      <DependentUpon>EMPTY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_capturesourceprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_capturesourceprofile.Designer.cs">
+      <DependentUpon>GET_capturesourceprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_captureprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_captureprofile.Designer.cs">
+      <DependentUpon>GET_captureprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_captureprofileapplicationplanitemlistid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_captureprofileapplicationplanitemlistid.Designer.cs">
+      <DependentUpon>GET_captureprofileapplicationplanitemlistid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_captureprofileid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_captureprofileid.Designer.cs">
+      <DependentUpon>GET_captureprofileid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GET_connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GET_connection.Designer.cs">
+      <DependentUpon>GET_connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INIManager.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="POST_document.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POST_document.Designer.cs">
+      <DependentUpon>POST_document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PUT_documentid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUT_documentid.Designer.cs">
+      <DependentUpon>PUT_documentid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebMethods.cs" />
+    <EmbeddedResource Include="AddString.resx">
+      <DependentUpon>AddString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeSamples.resx">
+      <DependentUpon>CodeSamples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTEXT_DOCUMENT.resx">
+      <DependentUpon>CONTEXT_DOCUMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTEXT_FOLDER.resx">
+      <DependentUpon>CONTEXT_FOLDER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTACT_INFO.resx">
+      <DependentUpon>CONTACT_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDGROUP.resx">
+      <DependentUpon>ADDGROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_usergroupidprivilege.resx">
+      <DependentUpon>PUT_usergroupidprivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_useridprivilege.resx">
+      <DependentUpon>PUT_useridprivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_usergroupid.resx">
+      <DependentUpon>DELETE_usergroupid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_usergroupidprivilege.resx">
+      <DependentUpon>GET_usergroupidprivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_usergroupid.resx">
+      <DependentUpon>GET_usergroupid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_useridprofile.resx">
+      <DependentUpon>PUT_useridprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_useridgroup.resx">
+      <DependentUpon>PUT_useridgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_usergroupid.resx">
+      <DependentUpon>PUT_usergroupid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_useridaccount.resx">
+      <DependentUpon>PUT_useridaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EXTERNAL_SYSTEM_INFO.resx">
+      <DependentUpon>EXTERNAL_SYSTEM_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDENTITY_INFO.resx">
+      <DependentUpon>IDENTITY_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_user.resx">
+      <DependentUpon>POST_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_userid.resx">
+      <DependentUpon>DELETE_userid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_useridprivilege.resx">
+      <DependentUpon>GET_useridprivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_useridgroup.resx">
+      <DependentUpon>GET_useridgroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_useridextendedinfo.resx">
+      <DependentUpon>GET_useridextendedinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_userid.resx">
+      <DependentUpon>GET_userid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_hosteddocumentclientdocidclientlogobclientlogobid.resx">
+      <DependentUpon>GET_hosteddocumentclientdocidclientlogobclientlogobid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_hosteddocumentclientdocumentid.resx">
+      <DependentUpon>GET_hosteddocumentclientdocumentid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_folderidpath.resx">
+      <DependentUpon>GET_folderidpath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_folderiddocumenttype.resx">
+      <DependentUpon>GET_folderiddocumenttype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_folderidbanner.resx">
+      <DependentUpon>GET_folderidbanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_documentidpagepageidfile.resx">
+      <DependentUpon>PUT_documentidpagepageidfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_documentidpagepageid.resx">
+      <DependentUpon>PUT_documentidpagepageid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_documentidpagepageid.resx">
+      <DependentUpon>DELETE_documentidpagepageid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_applicationplanidlocation.resx">
+      <DependentUpon>PUT_applicationplanidlocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_applicationplanid.resx">
+      <DependentUpon>GET_applicationplanid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_applicationplan.resx">
+      <DependentUpon>GET_applicationplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQ.resx">
+      <DependentUpon>FAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_capturegroupid.resx">
+      <DependentUpon>PUT_capturegroupid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATAPAIR.resx">
+      <DependentUpon>DATAPAIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_capturegroup.resx">
+      <DependentUpon>POST_capturegroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_workflowqueueidforwardroute.resx">
+      <DependentUpon>GET_workflowqueueidforwardroute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_workflowqueueidform.resx">
+      <DependentUpon>GET_workflowqueueidform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_workflowqueueid.resx">
+      <DependentUpon>GET_workflowqueueid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_capturegroupidpage.resx">
+      <DependentUpon>POST_capturegroupidpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_workflowitemidstate.resx">
+      <DependentUpon>PUT_workflowitemidstate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_workflowitemidhold.resx">
+      <DependentUpon>PUT_workflowitemidhold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_workflowitemidroutingaction.resx">
+      <DependentUpon>POST_workflowitemidroutingaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_workflowitem.resx">
+      <DependentUpon>POST_workflowitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_workflowitemid.resx">
+      <DependentUpon>GET_workflowitemid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_workflowitemid.resx">
+      <DependentUpon>DELETE_workflowitemid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_viewviewidfilterfilteridresult.resx">
+      <DependentUpon>POST_viewviewidfilterfilteridresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_viewidresult.resx">
+      <DependentUpon>POST_viewidresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_viewidrefreshresult.resx">
+      <DependentUpon>POST_viewidrefreshresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_viewid.resx">
+      <DependentUpon>GET_viewid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_usergroup.resx">
+      <DependentUpon>GET_usergroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_taskidreturnaction.resx">
+      <DependentUpon>POST_taskidreturnaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_taskidcompleteaction.resx">
+      <DependentUpon>POST_taskidcompleteaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_taskidcomment.resx">
+      <DependentUpon>POST_taskidcomment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_taskidcomment.resx">
+      <DependentUpon>GET_taskidcomment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_taskid.resx">
+      <DependentUpon>GET_taskid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_reasonlistidreason.resx">
+      <DependentUpon>GET_reasonlistidreason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_propertyid.resx">
+      <DependentUpon>GET_propertyid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_serveraction.resx">
+      <DependentUpon>POST_serveraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_formidfolderfolderid.resx">
+      <DependentUpon>PUT_formidfolderfolderid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_formiddocumentdocid.resx">
+      <DependentUpon>PUT_formiddocumentdocid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_formidpresentationpresentationidfilefileid.resx">
+      <DependentUpon>GET_formidpresentationpresentationidfilefileid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_formidpresentationpresentationid.resx">
+      <DependentUpon>GET_formidpresentationpresentationid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_formidpresentation.resx">
+      <DependentUpon>GET_formidpresentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_formidfolderfolderid.resx">
+      <DependentUpon>GET_formidfolderfolderid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_formiddocumentdocid.resx">
+      <DependentUpon>GET_formiddocumentdocid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_formid.resx">
+      <DependentUpon>GET_formid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_foldertypeid.resx">
+      <DependentUpon>GET_foldertypeid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_folderidname.resx">
+      <DependentUpon>PUT_folderidname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_folderid.resx">
+      <DependentUpon>PUT_folderid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_foldersearchresult.resx">
+      <DependentUpon>POST_foldersearchresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_folderidcontent.resx">
+      <DependentUpon>POST_folderidcontent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_folder.resx">
+      <DependentUpon>POST_folder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_folderid.resx">
+      <DependentUpon>GET_folderid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_folderid.resx">
+      <DependentUpon>DELETE_folderid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITEM.resx">
+      <DependentUpon>ITEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_draweridcontent.resx">
+      <DependentUpon>POST_draweridcontent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_drawerid.resx">
+      <DependentUpon>GET_drawerid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documenttypelistid.resx">
+      <DependentUpon>GET_documenttypelistid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documenttypeid.resx">
+      <DependentUpon>GET_documenttypeid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUT_documentidname.resx">
+      <DependentUpon>PUT_documentidname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_documentidcopy.resx">
+      <DependentUpon>POST_documentidcopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_documentidpage.resx">
+      <DependentUpon>POST_documentidpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOM_PROPERTIES.resx">
+      <DependentUpon>CUSTOM_PROPERTIES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOM_PROPERTIES_SET.resx">
+      <DependentUpon>CUSTOM_PROPERTIES_SET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HEAD_documentidpagepageidthumbnail.resx">
+      <DependentUpon>HEAD_documentidpagepageidthumbnail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HEAD_documentidpagepageidpreview.resx">
+      <DependentUpon>HEAD_documentidpagepageidpreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HEAD_documentidpagepageidfile.resx">
+      <DependentUpon>HEAD_documentidpagepageidfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documentidpagepageidthumbnail.resx">
+      <DependentUpon>GET_documentidpagepageidthumbnail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documentidpagepageidfile.resx">
+      <DependentUpon>GET_documentidpagepageidfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documentiddigitalsignature.resx">
+      <DependentUpon>GET_documentiddigitalsignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documentidpage.resx">
+      <DependentUpon>GET_documentidpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documentid.resx">
+      <DependentUpon>GET_documentid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_documentid.resx">
+      <DependentUpon>DELETE_documentid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_documentidpagepageidpreview.resx">
+      <DependentUpon>GET_documentidpagepageidpreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_digitalid.resx">
+      <DependentUpon>POST_digitalid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_connection.resx">
+      <DependentUpon>DELETE_connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_capturesourceprofile.resx">
+      <DependentUpon>GET_capturesourceprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_captureprofile.resx">
+      <DependentUpon>GET_captureprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_captureprofileapplicationplanitemlistid.resx">
+      <DependentUpon>GET_captureprofileapplicationplanitemlistid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_captureprofileid.resx">
+      <DependentUpon>GET_captureprofileid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GET_connection.resx">
+      <DependentUpon>GET_connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POST_document.resx">
+      <DependentUpon>POST_document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PUT_documentid.resx">
+      <DependentUpon>PUT_documentid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
